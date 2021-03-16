@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Latihan 4.6 Nomor 2</title>
+</head>
+<form method="POST" name="kalsed">
+	<h1>Kalkulator Sederhana</h1>
+	<p>Masukkan Bilangan Pertama : <input type="text" name="bil1" size="20"></p>
+	<p>Masukkan Bilangan Kedua : <input type="text" name="bil2" size="20"></p>
+	<p>Hasil : <input type="text" name="hasil" size="20"></p>
+	<p>
+		<input type="button" value="Tambah (+)" name="jumlah" onclick=penjumlahan()>
+        <input type="button" value="Kurang (-)" name="pengurangan" onclick=pengurangan()>
+        <input type="button" value="Kali (x)" name="perkalian" onclick=perkalian()>
+        <input type="button" value="Bagi (:)" name="pembagian" onclick=pembagian()>
+        <input type="reset" name="b1">
+        </p>
+	
+	<script>
+         // memanggil function untuk melakukan pembagian
+		function Penambahan() {
+			var nomer1 = parseInt (document.kalsed.bil1.value) 
+            var nomer2 = parseInt (document.kalsed.bil2. value);
+            var hitung_jumlah = nomer1+nomer2
+            document.kalsed. hasil. value = hitung_jumlah 
+        }
+            // memanggil function untuk melakukan pembagian
+ 		function pengurangan () {
+            // deklarasi dan input nilai variabel
+            var nomer1 = parseInt(document.kalsed. bil1. value)
+            var nomer2 = parseInt(document.kalsed. bil2. value)
+            // deklarasi operasi pembagian 
+            var hitung_kurang = nomer1-nomer2
+            document.kalsed. hasil. value = hitung_kurang
+        }
+
+            // memanggil function untuk melakukan pembagian
+        function perkalian() {
+        // deklarasi dan input nilai variabel
+            var nomer1 = parseInt(document.kalsed. bil1. value)
+            var nomer2 = parseInt(document.kalsed. bil2. value) 
+            // deklarasi operasi pembagian 
+            var hitung_kurang = nomer1*nomer2
+            document.kalsed. hasil. value = hitung_kali
+        }
+
+            // memanggil function untuk melakukan pembagian
+                function pembagian () {
+            // deklararasi dan input nilai variabel
+            var nomer1 = parseInt(document.kalsed. bil1. value)
+            var nomer2 = parseInt(document.kalsed. bil2. value)
+            // deklarasi operasi pembagian 
+            var hitung_bagi = nomer1/nomer2
+            document.kalsed. hasil. value = hitung_bagi // output : hasil pembagian
+        }
+
+</script>
+</body>
+</html>
